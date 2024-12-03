@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chữ và Ảnh Chạy</title>
+    <style>
+        /* Styling for marquee container */
+        .marquee-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            height: 150px; /* Độ cao của vùng hiển thị */
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Marquee content */
+        .marquee-content {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            animation: marquee 10s linear infinite; /* Tạo hiệu ứng chạy */
+        }
+
+        /* Animation keyframes */
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Styling for text and image */
+        .marquee-content h1 {
+            margin: 0 20px;
+            font-size: 24px;
+            color: hsl(0, 92%, 47%);
+        }
+        .marquee-content img {
+            width: 300px; /* Kích thước ảnh */
+            height: auto;
+            margin: 0 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <h1>7 CỎ QUÁ ĐẦN</h1>
+            <img src="./ronaldo-euro-2004.png" alt="Ảnh Ronaldo">
+            
+        </div>
+    </div>
+</body>
+</html>
